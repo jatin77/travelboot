@@ -1,15 +1,19 @@
+body {
+  position: relative;
+}
+
+nav {
+  box-shadow: rgb(0 0 0 / 8%) 0px 1px 12px;
+}
+
 .landing {
-  background-image: url(https://a0.muscache.com/im/pictures/d29cf6ea-a995-4af9-8ecf-f0caebed0ada.jpg?im_w=2560);
+  background-image: url(./assets/images/bg1.webp);
   background-size: 100%;
   background-position: 0 59px;
   height: 100vh;
   display: flex;
   align-items: flex-end;
   background-repeat: no-repeat;
-}
-
-body {
-  position: relative;
 }
 
 section {
@@ -20,20 +24,6 @@ section {
   padding-top: 67px;
 }
 
-@media (max-width: 740px) {
-  .landing {
-    background-image: url(https://a0.muscache.com/im/pictures/8096fa47-0535-49d2-9aca-8db39b3faacd.jpg?im_q=highq&im_w=720);
-  }
-
-  section {
-    margin-bottom: 50px;
-  }
-}
-
-nav {
-  box-shadow: rgb(0 0 0 / 8%) 0px 1px 12px;
-}
-
 .explore-nearby .card img {
   width: 64px;
   height: 64px;
@@ -42,4 +32,14 @@ nav {
 #explore .card,
 #discover .card {
   border: none;
+}
+
+@media (max-width: 740px) {
+  .landing {
+    background-image: url(./assets/images/bg2.webp);
+  }
+
+  section {
+    margin-bottom: 50px;
+  }
 }
